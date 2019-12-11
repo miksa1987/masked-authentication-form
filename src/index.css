@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div {
+  max-width: 40rem;
+}
+
+
+@media screen and (min-width: 40rem) {
+  div {
+    margin-left: calc((100% - 40rem) / 2); 
+  }
+}
