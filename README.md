@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## masked-authentication-form
 This is a React component for an authentication code form, which supports regular expressions for certain
 input characters only. It was inspired by this post on Medium by Indrek Lasn (Number 3): 
-https://medium.com/better-programming/here-are-5-front-end-challenges-to-code-dec-2019-edition-
+https://medium.com/better-programming/here-are-5-front-end-challenges-to-code-dec-2019-edition-7d691c4b023
 
 This is an early version still, it will get better!
 
