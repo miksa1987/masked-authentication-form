@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export default styled.div`
+export default styled.form`
   border-radius: ${props => props.rounded ? '7px' : '0px'};
   border: 1px solid #cacadd;
   background-color: white;

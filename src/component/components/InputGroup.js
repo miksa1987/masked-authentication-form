@@ -6,6 +6,7 @@ import useField from '../hooks/useField'
 const InputGroupBase = styled.div`
   display: flex;
   flex-direction: row;
+  margin: 2px;
 `
 
 export default (props) => {
@@ -17,9 +18,9 @@ export default (props) => {
 
   return (
     <InputGroupBase>
-      <Input {...one} />
-      <Input {...two} />
-      <Input {...three} />
+      <Input {...one} rounded={props.rounded} id='input' />
+      <Input {...two} rounded={props.rounded} id='input' />
+      <Input {...three} rounded={props.rounded} id='input' />
     </InputGroupBase>
   )
 }

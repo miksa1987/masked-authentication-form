@@ -16,14 +16,29 @@ export default (props) => {
 
   const aSetters = [setAOne, setATwo, setAThree] 
   const bSetters = [setBOne, setBTwo, setBThree] 
+
+  const submit = (event) => {
+    event.preventDefault()
+    props.onSubmit(code)
+  }
   
   return (
-    <ComponentBase rounded={props.rounded}>
+    <ComponentBase rounded={props.rounded} onSubmit={submit}>
       <strong>Please enter your verification code.</strong>
       <p>Open up your authenticator app to view your verification code.</p>
-      <Inputs aSetters={aSetters} bSetters={bSetters} regex={props.regex} />
+      
+      <Inputs 
+        aSetters={aSetters} 
+        bSetters={bSetters} 
+        regex={props.regex} 
+        rounded={props.rounded} 
+      />
+      
       <p>Or, try another way to log in.</p>
-      <StyledButton rounded={props.rounded}>Sign in to your account</StyledButton>
+      
+      <StyledButton id='submit-button' rounded={props.rounded} type='submit'>
+        Sign in to your account
+      </StyledButton>
     </ComponentBase>
   )
 }

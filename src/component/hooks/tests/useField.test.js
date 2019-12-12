@@ -23,7 +23,7 @@ describe('useField tests', () => {
     
     setTimeout(() => {
       expect(field.value).toBe('')
-    }, 10)
+    }, 50)
   })
 
   test('onChange doesnt allow characters outside the regex', () => {
@@ -36,7 +36,7 @@ describe('useField tests', () => {
     
     setTimeout(() => {
       expect(field.value).toBe('')
-    }, 10)
+    }, 50)
   })
 
   test('onChange changes value if string is in regex and 1 character long', () => {
@@ -49,7 +49,7 @@ describe('useField tests', () => {
     
     setTimeout(() => {
       expect(field.value).toBe('i')
-    }, 10)
+    }, 50)
   })
 
   test('setDesiredValue works', () => {
@@ -62,7 +62,7 @@ describe('useField tests', () => {
     
     setTimeout(() => {
       expect(field.value).toBe('i')
-    }, 10)
+    }, 50)
   })
 
   test('setDesiredValue doesnt change value if string is over 1 characters long', () => {
@@ -75,7 +75,7 @@ describe('useField tests', () => {
     
     setTimeout(() => {
       expect(field.value).toBe('')
-    }, 10)
+    }, 50)
   })
 
   test('setDesiredValue doesnt change value if string is not in regex', () => {
@@ -88,6 +88,6 @@ describe('useField tests', () => {
     
     setTimeout(() => {
       expect(field.value).toBe('')
-    }, 10)
+    }, 50)
   })
 })
